@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -61,6 +61,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
@@ -91,6 +92,34 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: row;
+}
+
+h1, nav, .social {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: black;
+    background: rgba(5, 5, 5, 0.80);
+    padding: 0 5% 0 5%;
+}
+
+nav {
+    padding: .5% 5% 0 5%;
+}
+
+.social {
+    padding: .5% 40% 1% 40%;
+}
+
+h1 a {
+    font-size: 6rem;
+    color: white;
+}
+
+nav a {
+    font-size: 2.5rem;
+    color: white;
 }
 
 /* spacers */
@@ -111,6 +140,16 @@ header {
     height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+}
+
+.gallery h2 {
+    font-size: 6rem;
+    padding: 3% 0 0 0;
+}
+
+.foodgallery img {
+    width: 26%;
+    padding: 1%;
 }
 
 /* about us section */
@@ -141,6 +180,16 @@ header {
     width: 50%;
 }
 
+.text h3 {
+    font-size: 3.25rem;
+    padding: 1%;
+}
+
+.text p {
+    font-size: 2.25rem;
+    line-height: 1.35;
+}
+
 /* contact us section */
 .contact {
     text-align: center;
@@ -163,10 +212,12 @@ header {
 
 .contact h3 {
     padding-top: 2.5vh;
+    font-size: 3.25rem;
 }
 
 .contact p {
     padding: .5vh 0;
+    font-size: 2.25rem;
 }
 
 .info {
@@ -188,13 +239,50 @@ header {
     width: 25%;
 }
 
+.contacts a {
+    color: white;
+    font-size: 2.25rem;
+}
+
 /* footer section */
 footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 15vh;
-    padding-top: 2.5vh;
-    font-size: 3rem;
+    padding: 2.5vh 2.5vh 0 2.5vh;
+    background-color: black;
 }
+
+.bottomnav {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10% 10% 10%
+}
+
+.bottomnav nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottomnav a {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.25rem;
+}
+
+
+footer h3 {
+    font-size: 2.25rem;
+}
+
+.bottomnav p {
+    font-size: 1.25rem;
+}
+
+
 
 /* mobile media query */
 @media (max-width: 428px) {
